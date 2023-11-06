@@ -230,9 +230,85 @@ h1, h2, h3, h4 {
 
 .portfolio{
 	&__container{
-		padding-top: 50px;
+		padding: 50px 0;
 	}
 	&__title{
 		@include page-titles;
+		margin: 20px 0 20px 20px;
+	}
+	&__box{
+		margin: 100px 28px;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 50px;
+		&__card{
+			max-width: 360px;
+			max-height: 460px;
+			border-radius: 16px;
+			border: 1px solid rgba(123, 74, 226, 0.50);
+			padding: 30px;
+			transition: 0.5s;
+			.card__title{
+				color: #FFF;
+				font-size: 20px;
+				font-weight: 700;
+				margin-bottom: 9px;
+			}
+			.card__desr{
+				color: $color_descr;
+				line-height: 140%;
+				width: 300px;
+				height: 100px;
+				margin-bottom: 22px;
+			}
+			.card__tools{
+				display: flex;
+				margin-bottom: 22px;
+				.card__tools__item{
+					max-width: 106px;
+					max-height: 30px;
+					background-color:#7a4ae250;
+					color: #7B4AE2;
+					font-size: 16px;
+					font-weight: 700;
+					text-align: center;
+					padding: 5px 15px;
+					border-radius: 7px;
+					transition: 0.5s;
+					&--main{
+						background-color:rgba(74, 226, 144, 0.30);
+						font-size: 16px;
+						font-weight: 700;
+						text-align: center;
+						padding: 5px 15px;
+						border-radius: 7px;
+						transition: 0.5s;
+						color: #4AE290;
+					}
+				}
+				.card__tools__item:not(:first-child){
+					margin-left: 15px;
+				}
+			}
+			.card__img{
+				width: 300px;
+				height: 200px;
+				border-radius: 16px;
+				transition: 0.5s;
+			}
+		}
+		&__card:hover {
+			background-color: rgba(123, 74, 226, 0.50);
+			.card__img{
+				opacity: 0.4;
+			}
+			.card__tools__item{
+				background-color:#976fec50;
+				color: #a47ef5;
+				&--main{
+					opacity: 0.8;
+				}
+			}
+		}
 	}
 }

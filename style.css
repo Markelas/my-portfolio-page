@@ -213,10 +213,86 @@ h1, h2, h3, h4 {
 
 /*-----------------------------------Portfolio-----------------------------------*/
 .portfolio__container {
-  padding-top: 50px;
+  padding: 50px 0;
 }
 .portfolio__title {
   color: #FFFFFF;
   font-weight: 800;
   font-size: 52px;
+  margin: 20px 0 20px 20px;
+}
+.portfolio__box {
+  margin: 100px 28px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.portfolio__box__card {
+  max-width: 360px;
+  max-height: 460px;
+  border-radius: 16px;
+  border: 1px solid rgba(123, 74, 226, 0.5);
+  padding: 30px;
+  transition: 0.5s;
+}
+.portfolio__box__card .card__title {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 9px;
+}
+.portfolio__box__card .card__desr {
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 140%;
+  width: 300px;
+  height: 100px;
+  margin-bottom: 22px;
+}
+.portfolio__box__card .card__tools {
+  display: flex;
+  margin-bottom: 22px;
+}
+.portfolio__box__card .card__tools .card__tools__item {
+  max-width: 106px;
+  max-height: 30px;
+  background-color: rgba(122, 74, 226, 0.3137254902);
+  color: #7B4AE2;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  padding: 5px 15px;
+  border-radius: 7px;
+  transition: 0.5s;
+}
+.portfolio__box__card .card__tools .card__tools__item--main {
+  background-color: rgba(74, 226, 144, 0.3);
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  padding: 5px 15px;
+  border-radius: 7px;
+  transition: 0.5s;
+  color: #4AE290;
+}
+.portfolio__box__card .card__tools .card__tools__item:not(:first-child) {
+  margin-left: 15px;
+}
+.portfolio__box__card .card__img {
+  width: 300px;
+  height: 200px;
+  border-radius: 16px;
+  transition: 0.5s;
+}
+.portfolio__box__card:hover {
+  background-color: rgba(123, 74, 226, 0.5);
+}
+.portfolio__box__card:hover .card__img {
+  opacity: 0.4;
+}
+.portfolio__box__card:hover .card__tools__item {
+  background-color: rgba(151, 111, 236, 0.3137254902);
+  color: #a47ef5;
+}
+.portfolio__box__card:hover .card__tools__item--main {
+  opacity: 0.8;
 }/*# sourceMappingURL=style.css.map */
