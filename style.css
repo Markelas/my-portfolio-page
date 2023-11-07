@@ -236,9 +236,9 @@ h1, h2, h3, h4 {
   transition: 0.5s;
 }
 .portfolio__box__card .card__title {
-  color: #FFF;
-  font-size: 20px;
+  color: #FFFFFF;
   font-weight: 700;
+  font-size: 20px;
   margin-bottom: 9px;
 }
 .portfolio__box__card .card__desr {
@@ -355,7 +355,7 @@ h1, h2, h3, h4 {
   justify-content: space-between;
 }
 .career .career__box__card .card__header__title {
-  color: #FFF;
+  color: #FFFFFF;
   font-weight: 700;
   font-size: 20px;
   margin-bottom: 8px;
@@ -388,4 +388,60 @@ h1, h2, h3, h4 {
 .career .career__box__card .card__footer__time {
   color: #7B4AE2;
   font-size: 18px;
+}
+
+/*-------------------------------------Recommendations--------------------------------*/
+.recommend {
+  margin-top: 145px;
+  padding-bottom: 35px;
+}
+.recommend .page-parts {
+  max-width: 200px;
+  margin: 0;
+}
+.recommend .page-parts__text {
+  margin: 0;
+}
+.recommend__title {
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 52px;
+  margin-top: 28px;
+  margin-bottom: 64px;
+}
+.recommend__box {
+  display: flex;
+  justify-content: space-around;
+}
+.recommend__box__card {
+  padding: 35px 35px 15px 35px;
+  width: 380px;
+  max-height: 200px;
+  border-radius: 16px;
+  border: 1px solid rgba(123, 74, 226, 0.5);
+}
+.recommend__box__card .card__photo {
+  max-width: 64px;
+  max-height: 64px;
+  margin: 10px;
+}
+.recommend__box__card .card__company-logo {
+  max-height: 34px;
+  display: block;
+  margin: 0 auto;
+}
+.recommend__box__card .card__body {
+  display: flex;
+}
+.recommend__box__card .card__person__name {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 15px;
+}
+.recommend__box__card .card__person__position {
+  color: rgba(123, 74, 226, 0.8);
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 10px;
 }/*# sourceMappingURL=style.css.map */

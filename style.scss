@@ -9,6 +9,11 @@ $background-color_2: rgba(123, 74, 226, 0.1);
 	font-weight: 800;
 	font-size: 52px;
 }
+@mixin card-titles {
+	color: $color_1;
+	font-weight: 700;
+	font-size: 20px;
+}
 
 @font-face {
 	font-weight: 400;
@@ -249,9 +254,7 @@ h1, h2, h3, h4 {
 			padding: 30px;
 			transition: 0.5s;
 			.card__title{
-				color: #FFF;
-				font-size: 20px;
-				font-weight: 700;
+				@include card-titles;
 				margin-bottom: 9px;
 			}
 			.card__desr{
@@ -366,9 +369,7 @@ h1, h2, h3, h4 {
 					display: flex;
 					justify-content: space-between;
 					&__title{
-						color: #FFF;
-						font-weight: 700;
-						font-size: 20px;
+						@include card-titles;
 						margin-bottom: 8px;
 					}
 					&__logo{
@@ -400,6 +401,61 @@ h1, h2, h3, h4 {
 						color: #7B4AE2;
 						font-size: 18px;
 					}
+				}
+			}
+		}
+	}
+}
+
+/*-------------------------------------Recommendations--------------------------------*/
+
+.recommend{
+	margin-top: 145px;
+	padding-bottom: 35px;
+	.page-parts{
+		max-width: 200px;
+		margin: 0;
+		&__text{
+			margin: 0;
+		}
+	}
+	&__title{
+		@include page-titles;
+		margin-top: 28px;
+		margin-bottom: 64px;
+	}
+	&__box{
+		display: flex;
+		justify-content: space-around;
+		&__card{
+			padding: 35px 35px 15px 35px;
+			width: 380px;
+			max-height: 200px;
+			border-radius: 16px;
+			border: 1px solid rgba(123, 74, 226, 0.50);
+			.card__photo{
+				max-width: 64px;
+				max-height: 64px;
+				margin: 10px;
+			}
+			.card__company-logo{
+				max-height: 34px;
+				display: block;
+    		margin: 0 auto; 
+			}
+			.card__body{
+				display:flex;
+			}
+			.card__person{
+				&__name{
+					@include card-titles;
+					margin-top: 15px
+				}
+				&__position{
+					color: rgba(123, 74, 226, 0.80);
+					font-size: 16px;
+					font-weight: 700;
+					margin-top: 10px;
 				}
 			}
 		}
