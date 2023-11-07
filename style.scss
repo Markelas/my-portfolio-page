@@ -52,7 +52,7 @@ a {
 	font-family: $font-family_1;
 	margin: 0;
 	padding: 0;
-	font-weight: 400;
+	font-weight: 400; 
 }
 h1, h2, h3, h4 {
 	margin: 0;
@@ -307,6 +307,99 @@ h1, h2, h3, h4 {
 				color: #a47ef5;
 				&--main{
 					opacity: 0.8;
+				}
+			}
+		}
+	}
+}
+
+/*-------------------------------------Technologies-------------------------------------*/
+
+.technologies{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 150px;
+	.page-parts{
+		margin: 0 auto;
+	}
+	&__title{
+		@include page-titles;
+		margin: 20px 0 20px 20px;
+		text-align: center;
+	}
+	&__block{
+		max-width: 800px;
+		display: flex;
+		flex-wrap: wrap;
+		&__icon{
+			max-width: 64px;
+			max-height: 64px;
+			margin: 25px;
+		}
+	}
+}
+
+/*--------------------------------------Career---------------------------------------*/
+
+.career{
+	display: flex;
+	justify-content: center;
+	.page-parts{
+		margin: 0 auto;
+	}
+	&__title{
+		@include page-titles;
+		margin-top: 28px;
+		text-align: center;
+		margin-bottom: 70px;
+	}
+	.career__box{
+		width: 800px;
+		&__card{
+			margin-top: 64px;
+			max-width: 100%;
+			border-radius: 16px;
+			background: rgba(123, 74, 226, 0.1);
+			padding: 40px;
+			.card{
+				&__header{
+					display: flex;
+					justify-content: space-between;
+					&__title{
+						color: #FFF;
+						font-weight: 700;
+						font-size: 20px;
+						margin-bottom: 8px;
+					}
+					&__logo{
+						max-width: 120px;
+						max-height: 120px;
+					}
+				}
+				&__link{
+					color: #ffffff7a;
+					text-decoration: underline;
+					display: block;
+				}
+				&__desr{
+					padding-top: 8px;
+					color: rgba(255, 255, 255, 0.50);
+					font-size: 16px;
+					line-height: 160%;
+				}
+				&__footer{
+					display: flex;
+					justify-content: space-between;
+					padding-top: 17px;
+					&__term{
+						color: #7B4AE2;
+						font-size: 18px;
+						font-weight: 700;
+					}
+					&__time{
+						color: #7B4AE2;
+						font-size: 18px;
+					}
 				}
 			}
 		}

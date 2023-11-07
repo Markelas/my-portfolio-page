@@ -295,4 +295,97 @@ h1, h2, h3, h4 {
 }
 .portfolio__box__card:hover .card__tools__item--main {
   opacity: 0.8;
+}
+
+/*-------------------------------------Technologies-------------------------------------*/
+.technologies {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 150px;
+}
+.technologies .page-parts {
+  margin: 0 auto;
+}
+.technologies__title {
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 52px;
+  margin: 20px 0 20px 20px;
+  text-align: center;
+}
+.technologies__block {
+  max-width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.technologies__block__icon {
+  max-width: 64px;
+  max-height: 64px;
+  margin: 25px;
+}
+
+/*--------------------------------------Career---------------------------------------*/
+.career {
+  display: flex;
+  justify-content: center;
+}
+.career .page-parts {
+  margin: 0 auto;
+}
+.career__title {
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 52px;
+  margin-top: 28px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+.career .career__box {
+  width: 800px;
+}
+.career .career__box__card {
+  margin-top: 64px;
+  max-width: 100%;
+  border-radius: 16px;
+  background: rgba(123, 74, 226, 0.1);
+  padding: 40px;
+}
+.career .career__box__card .card__header {
+  display: flex;
+  justify-content: space-between;
+}
+.career .career__box__card .card__header__title {
+  color: #FFF;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+.career .career__box__card .card__header__logo {
+  max-width: 120px;
+  max-height: 120px;
+}
+.career .career__box__card .card__link {
+  color: rgba(255, 255, 255, 0.4784313725);
+  text-decoration: underline;
+  display: block;
+}
+.career .career__box__card .card__desr {
+  padding-top: 8px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 16px;
+  line-height: 160%;
+}
+.career .career__box__card .card__footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 17px;
+}
+.career .career__box__card .card__footer__term {
+  color: #7B4AE2;
+  font-size: 18px;
+  font-weight: 700;
+}
+.career .career__box__card .card__footer__time {
+  color: #7B4AE2;
+  font-size: 18px;
 }/*# sourceMappingURL=style.css.map */
