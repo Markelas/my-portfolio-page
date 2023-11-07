@@ -167,28 +167,27 @@ h1, h2, h3, h4 {
 	}
 	&__links {
 		max-width: 200px;
+	}
+}
+.connection-btn{
+	width: 196px;
+	height: 44px;
+	border-radius: 16px;
+	border: 1px solid rgba(122, 74, 226, 0.9);
+	background-color: rgba(123, 74, 226, 0.09);
+	color:rgba(123, 74, 226, 0.9);
+	cursor: pointer;
+	transition: background-color 0.6s;
+	&:hover{
+		background-color: rgba(123, 74, 226, 0.4);
+	}
 
-		&__download-btn{
-			width: 196px;
-			height: 44px;
-			border-radius: 16px;
-			border: 1px solid rgba(123, 74, 226, 0.8);
-			background-color: rgba(123, 74, 226, 0.09);
-			color:rgba(123, 74, 226, 0.8);
-			cursor: pointer;
-			transition: background-color 0.6s;
-			&:hover{
-				background-color: rgba(123, 74, 226, 0.4);
-			}
+	&__text{
+		font-size: 16px;
+		font-weight: 600;
 
-			&__text{
-				font-size: 16px;
-				font-weight: 600;
-
-				&__span{
-					height: 100px;
-				}
-			}
+		&__span{
+			height: 100px;
 		}
 	}
 }
@@ -459,5 +458,34 @@ h1, h2, h3, h4 {
 				}
 			}
 		}
+	}
+}
+
+/*-------------------------------------Contacts--------------------------------*/
+
+.contacts{
+	margin-top: 101px;
+	display: flex;
+	justify-content: center;
+	&__container{
+		margin: 0 auto;
+	}
+	.page-parts{
+		margin: 0 auto;
+		max-width: 200px;
+		margin: 0;
+		&__text{
+			margin: 0;
+		}
+	}
+	&__title{
+		@include page-titles;
+		margin-top: 28px;
+		text-align: center;
+		margin-bottom: 70px;
+	}
+	&__box{
+		display: flex;
+		width: 500px;
 	}
 }

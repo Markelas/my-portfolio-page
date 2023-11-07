@@ -151,24 +151,25 @@ h1, h2, h3, h4 {
 .promo__links {
   max-width: 200px;
 }
-.promo__links__download-btn {
+
+.connection-btn {
   width: 196px;
   height: 44px;
   border-radius: 16px;
-  border: 1px solid rgba(123, 74, 226, 0.8);
+  border: 1px solid rgba(122, 74, 226, 0.9);
   background-color: rgba(123, 74, 226, 0.09);
-  color: rgba(123, 74, 226, 0.8);
+  color: rgba(123, 74, 226, 0.9);
   cursor: pointer;
   transition: background-color 0.6s;
 }
-.promo__links__download-btn:hover {
+.connection-btn:hover {
   background-color: rgba(123, 74, 226, 0.4);
 }
-.promo__links__download-btn__text {
+.connection-btn__text {
   font-size: 16px;
   font-weight: 600;
 }
-.promo__links__download-btn__text__span {
+.connection-btn__text__span {
   height: 100px;
 }
 
@@ -444,4 +445,34 @@ h1, h2, h3, h4 {
   font-size: 16px;
   font-weight: 700;
   margin-top: 10px;
+}
+
+/*-------------------------------------Contacts--------------------------------*/
+.contacts {
+  margin-top: 101px;
+  display: flex;
+  justify-content: center;
+}
+.contacts__container {
+  margin: 0 auto;
+}
+.contacts .page-parts {
+  margin: 0 auto;
+  max-width: 200px;
+  margin: 0;
+}
+.contacts .page-parts__text {
+  margin: 0;
+}
+.contacts__title {
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 52px;
+  margin-top: 28px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+.contacts__box {
+  display: flex;
+  width: 500px;
 }/*# sourceMappingURL=style.css.map */
