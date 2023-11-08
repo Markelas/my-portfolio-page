@@ -118,6 +118,7 @@ h1, h2, h3, h4 {
 			font-weight: 700;
 			opacity: 0.9;
 			padding-bottom: 7px;
+			cursor:default;
 		}
 	}
 }
@@ -206,6 +207,7 @@ h1, h2, h3, h4 {
 }
 /*-------------------------------------ABOUT ME-----------------------------------*/
 .about-me {
+	cursor: default;
 	&__container{
 		display: flex;
 		justify-content: space-around;
@@ -270,7 +272,7 @@ h1, h2, h3, h4 {
 					max-width: 106px;
 					max-height: 30px;
 					background-color:#7a4ae250;
-					color: #7B4AE2;
+					color: $color_2;
 					font-size: 16px;
 					font-weight: 700;
 					text-align: center;
@@ -318,6 +320,7 @@ h1, h2, h3, h4 {
 /*-------------------------------------Technologies-------------------------------------*/
 
 .technologies{
+	cursor: default;
 	display: flex;
 	justify-content: center;
 	margin-bottom: 150px;
@@ -392,12 +395,12 @@ h1, h2, h3, h4 {
 					justify-content: space-between;
 					padding-top: 17px;
 					&__term{
-						color: #7B4AE2;
+						color: $color_2;
 						font-size: 18px;
 						font-weight: 700;
 					}
 					&__time{
-						color: #7B4AE2;
+						color: $color_2;
 						font-size: 18px;
 					}
 				}
@@ -469,11 +472,12 @@ h1, h2, h3, h4 {
 	justify-content: center;
 	&__container{
 		margin: 0 auto;
+		width: 700px;
+		padding-bottom: 180px;
 	}
 	.page-parts{
 		margin: 0 auto;
 		max-width: 200px;
-		margin: 0;
 		&__text{
 			margin: 0;
 		}
@@ -486,6 +490,67 @@ h1, h2, h3, h4 {
 	}
 	&__box{
 		display: flex;
-		width: 500px;
+		justify-content: space-between;
+		align-items: center;
+		justify-content: space-evenly;
+		&__link{
+		}
+	}
+	.connection-btn{
+		max-width: 246px;
+		&__text{
+			text-align: center;
+		}
+	}
+	.contacts__box_link{
+		display: block;
+	}
+	.contacts__box__mail{
+		.mail__telegram{
+			color: $color_2;
+			font-size: 20px;
+			font-weight: 700;
+			display: block;
+			text-align: center;
+			img {
+				max-height: 30px;
+			}
+		}
+		.mail__text{
+			color: $color_2;
+			font-size: 20px;
+			font-weight: 600;
+			margin-top: 40px;
+			text-align: center;
+		}
+		.mail__adress{
+			font-size: 20px;
+			font-weight: 600;
+			margin-top: 10px;
+			color: white;
+			opacity: 0.7;
+			text-align: center;
+			display: block;
+		}
+	}
+}
+
+/*----------------------------------Footer----------------------------*/
+.footer{
+	.footer__container{
+		height: 88px;
+		background-color:rgb(51, 51, 53);
+	}
+	&__social-network{
+		display: flex;
+		justify-content: center;
+		padding-top: 25px;
+		a{
+			margin: 0 15px;
+		}
+		&__icon{
+			max-height: 34px;
+			max-width: 34px;
+		}
 	}
 }
