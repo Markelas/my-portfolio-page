@@ -57,7 +57,7 @@ a {
 	font-family: $font-family_1;
 	margin: 0;
 	padding: 0;
-	font-weight: 400; 
+	font-weight: 400;
 }
 h1, h2, h3, h4 {
 	margin: 0;
@@ -133,7 +133,7 @@ h1, h2, h3, h4 {
 		align-items: center;
 		padding-bottom: 250px;
 	}
-	
+
 	&__info{
 		max-width: 412px;
 		max-height: 301px;
@@ -151,7 +151,7 @@ h1, h2, h3, h4 {
 		color: $color_descr;
 		text-align: justify;
 		font-size: 20px;
-	}
+	},
 	&__social-network{
 		a:not(:first-child){
 			margin-left: 15px;
@@ -452,7 +452,7 @@ h1, h2, h3, h4 {
 			.card__company-logo{
 				max-height: 34px;
 				display: block;
-    		margin: 0 auto; 
+    		margin: 0 auto;
 			}
 			.card__body{
 				display:flex;
@@ -580,7 +580,7 @@ h1, h2, h3, h4 {
 	}
 	/*----------------AboutMe----------------*/
 	.photo__my-photo{
-		max-width: 350px; 
+		max-width: 350px;
 	}
 	.about-me{
 		&__container{
