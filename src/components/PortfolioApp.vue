@@ -1,8 +1,8 @@
 <template>
   <section class="portfolio" id="portfolio">
     <div class="portfolio__container">
-      <div class="promo page-parts">
-        <h4 class="promo page-parts__text">🔗 Portfolio</h4>
+      <div class="portfolio page-parts">
+        <h4 class="portfolio page-parts__text">🔗 Portfolio</h4>
       </div>
       <h2 class="portfolio__title">My projects</h2>
       <div class="portfolio__box">
