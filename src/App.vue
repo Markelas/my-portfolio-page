@@ -1,150 +1,15 @@
 <template>
   <div id="app">
-    <body>
     <div class="background_container" id="about">
       <div class="wrapper">
-        <header>
-          <div class="header_container">
-            <nav class="navigation">
-              <img src="../icons/laptop.png" alt="laptop-icon" class="navigation__icon">
-              <ul class="navigation__menu">
-                <li class="menu__item"><a href="#home" class="menu__item-link--active">Home</a></li>
-                <li class="menu__item"><a href="#aboutMe" class="menu__item-link">About me</a></li>
-                <li class="menu__item"><a href="#portfolio" class="menu__item-link">Portfolio</a></li>
-                <li class="menu__item"><a href="#skills" class="menu__item-link">Skills</a></li>
-                <li class="menu__item"><a href="#career" class="menu__item-link">Career</a></li>
-                <li class="menu__item"><a href="#recommendation" class="menu__item-link">Recommendation</a></li>
-                <li class="menu__item"><a href="#contacts" class="menu__item-link">Contacts</a></li>
-              </ul>
-            </nav>
-          </div>
-        </header>
-        <section class="promo">
-          <div class="promo__container">
-            <div class="promo__info">
-              <div class="promo page-parts">
-                <h4 class="promo page-parts__text">👋 Hello!</h4>
-              </div>
-              <h1 class="promo__name">Girfanov Mark</h1>
-              <div class="promo__profession">Front-end developer</div>
-              <div class="promo__social-network">
-                <a href="https://github.com/Markelas"><img src="../icons/github.png" alt="github-icon" class="social-network__icon"></a>
-                <a href="https://t.me/Marlontis"><img src="../icons/telegram.png" alt="telegram-icon" class="social-network__icon"></a>
-                <a href="https://vk.com/markeellas"><img src="../icons/vk.png" alt="vk-icon" class="social-network__icon"></a>
-              </div>
-            </div>
-            <img src="../images/Mark.png" alt="Mark_img" class="promo__logo">
-            <div class="promo__links">
-              <a href="https://kazan.hh.ru/resume/88e02d45ff0908c6be0039ed1f446b50496231">
-                <button class="promo__links connection-btn">
-                  <h4 class="connection-btn__text">Open CV on HH.ru</h4>
-                </button>
-              </a>
-            </div>
-          </div>
-        </section>
-        <section class="about-me" id="aboutMe">
-          <div class="about-me__container">
-            <div class="about-me__photo">
-              <img src="../images/ProfilePic.png" alt="photo" class="photo__my-photo">
-            </div>
-            <div class="about-me__info">
-              <div class="about-me page-parts">
-                <h4 class="about-me page-parts__text">🧐 About me</h4>
-              </div>
-              <h2 class="about-me__info__name">Girfanov Mark</h2>
-              <div class="about-me__info__descr">
-                <p class="about-me__info__descr__text"> 🎓 Education: Kazan National Research Technical University
-                  named after A. N. Tupolev - KAI, Kazan<br>
-                  💻 Specialty: Information Systems and Technologies.<br>
-                  👨‍💻 Skills: I have been developing and programming interfaces for more than 2 years.<br>
-                  🤖 Currently I use JavaScript, Typescript, Vue JS, Vuex, Vue Router, Vuetify, SCSS, Git.<br>
-                  🚀 I try every day to be a little better than yesterday.<br>
-                  🕗 In my spare time I like to paint 🎨 and go to the GYM 🏋️.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="portfolio" id="portfolio">
-          <div class="portfolio__container">
-            <div class="promo page-parts">
-              <h4 class="promo page-parts__text">🔗 Portfolio</h4>
-            </div>
-            <h2 class="portfolio__title">My projects</h2>
-            <div class="portfolio__box">
-              <a href="https://vue-crm-frontend-mark.web.app/">
-                <div class="portfolio__box__card">
-                  <h4 class="card__title">Vue js CRM system</h4>
-                  <p class="card__desr">This is a CRM system (home accounting) for analyzing and accounting for expenses.</p>
-                  <div class="card__tools">
-                    <div class="card__tools__item--main">Vue js</div>
-                    <div class="card__tools__item">Typescript</div>
-                  </div>
-                  <img src="../images/card_img/card_vue_crm.png" alt="vue_crm_img" class="card__img">
-                </div>
-              </a>
-              <a href="https://vue-freelance-web-app-mark.web.app/">
-                <div class="portfolio__box__card">
-                  <h4 class="card__title">Vue js Freelance</h4>
-                  <p class="card__desr">This is an application for finding freelance jobs. Here you can publish your new task or take it on the board with suggestions.</p>
-                  <div class="card__tools">
-                    <div class="card__tools__item--main">Vue js</div>
-                    <div class="card__tools__item">JavaScript</div>
-                  </div>
-                  <img src="../images/card_img/card_vue_freelance.png" alt="vue_crm_img" class="card__img">
-                </div>
-              </a>
-              <a href="https://vue-homework-8-mark.web.app/">
-                <div class="portfolio__box__card">
-                  <h4 class="card__title">Vue js resume constructor</h4>
-                  <p class="card__desr">This is a resume constructor. Here you can put together your own resume.</p>
-                  <div class="card__tools">
-                    <div class="card__tools__item--main">Vue js</div>
-                    <div class="card__tools__item">JavaScript</div>
-                  </div>
-                  <img src="../images/card_img/card_vue_resume.png" alt="vue_crm_img" class="card__img">
-                </div>
-              </a>
-              <a href="https://vue-ts-todos.web.app/">
-                <div class="portfolio__box__card">
-                  <h4 class="card__title">Vue js Todos</h4>
-                  <p class="card__desr">
-                    This is a list of tasks where you can see current tasks and completed ones. You can also create a new task.</p>
-                  <div class="card__tools">
-                    <div class="card__tools__item--main">Vue js</div>
-                    <div class="card__tools__item">JavaScript</div>
-                  </div>
-                  <img src="../images/card_img/card_vue_todos.png" alt="vue_crm_img" class="card__img">
-                </div>
-              </a>
-              <a href="https://rolling-scopes-school.github.io/markelas-JSFEPRESCHOOL2022Q4/plants/pages/main/">
-                <div class="portfolio__box__card">
-                  <h4 class="card__title">Plants</h4>
-                  <p class="card__desr">Website for a plant care company. The company is engaged in the cultivation, care and sale of plants. </p>
-                  <div class="card__tools">
-                    <div class="card__tools__item--main">JavaScript</div>
-                    <div class="card__tools__item">HTML</div>
-                    <div class="card__tools__item">CSS</div>
-                  </div>
-                  <img src="../images/card_img/card_plants.png" alt="vue_crm_img" class="card__img">
-                </div>
-              </a>
-              <a href="https://rolling-scopes-school.github.io/markelas-JSFE2022Q1/shelter/pages/main/index.html">
-                <div class="portfolio__box__card">
-                  <h4 class="card__title">Cozy House</h4>
-                  <p class="card__desr">Website for shelter. They offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world.</p>
-                  <div class="card__tools">
-                    <div class="card__tools__item--main">JavaScript</div>
-                    <div class="card__tools__item">HTML</div>
-                    <div class="card__tools__item">CSS</div>
-                  </div>
-                  <img src="../images/card_img/card_cozy_house.png" alt="vue_crm_img" class="card__img">
-                </div>
-              </a>
-            </div>
-          </div>
-        </section>
+        <header-app/>
+
+        <promo-app/>
+
+        <about-me-app/>
+
+        <portfolio-app/>
+
         <section class="technologies" id="skills">
           <div class="technologies__container">
             <div class="technologies page-parts">
@@ -326,7 +191,6 @@
         </section>
       </div>
     </div>
-    </body>
     <footer class="footer">
       <div class="footer__container">
         <div class="footer__social-network">
@@ -341,7 +205,13 @@
 
 <script>
 
+import HeaderApp from "@/components/HeaderApp.vue";
+import PromoApp from "@/components/PromoApp.vue";
+import AboutMeApp from "@/components/AboutMeApp.vue";
+import PortfolioApp from "@/components/PortfolioApp.vue";
+
 export default {
+  components: {PortfolioApp, HeaderApp, PromoApp, AboutMeApp}
 
 }
 </script>
