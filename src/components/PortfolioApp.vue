@@ -5,7 +5,7 @@
         <h4 class="portfolio page-parts__text">🔗 Portfolio</h4>
       </div>
       <h2 class="portfolio__title">My projects</h2>
-      <div class="portfolio__box">
+      <div class="portfolio__box" v-if="windowSizeCheck">
         <div class="portfolio__box__card" v-for="card in cardsInfo" :key="card.id">
           <a :href='card.cardLink'>
             <h4 class="card__title">{{card.title}}</h4>
@@ -18,13 +18,20 @@
           </a>
         </div>
       </div>
+      <swiper-app :cards-info="cardsInfo" v-else/>
     </div>
   </section>
 </template>
 
 <script>
+
+
+import SwiperApp from "@/components/swiperDir/swiperApp.vue";
+
 export default {
   name: "PortfolioApp",
+  components: {SwiperApp},
+
   data() {
     return {
       cardsInfo:[
@@ -86,8 +93,8 @@ export default {
     }
   },
   computed:{
-    toolsCheck() {
-      return (this.cardsInfo.toolsSecond.length !== 1) ? this.cardsInfo.toolsSecond : this.cardsInfo.toolsSecond
+    windowSizeCheck() { //Показываем карусель при маленьких разрешениях
+      return window.innerWidth >= 1020;
     }
   }
 }

@@ -50,10 +50,15 @@ export default {
         },
       ]
     }
+  },
+  computed:{
+    windowSizeCheck() { //Показываем карусель при маленьких разрешениях
+      return window.innerWidth >= 1020;
+    }
   }
 }
 </script>
 
-<style scoped lang="scss">
+<style scoped>
 
 </style>
