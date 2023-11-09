@@ -1,6 +1,11 @@
 <template>
   <header>
     <div class="header_container">
+      <div class="header__social-network">
+        <a href="https://github.com/Markelas"><img src="../../icons/github.png" alt="github-icon" class="header__social-network__icon"></a>
+        <a href="https://t.me/Marlontis"><img src="../../icons/telegram.png" alt="telegram-icon" class="header__social-network__icon"></a>
+        <a href="https://vk.com/markeellas"><img src="../../icons/vk.png" alt="vk-icon" class="header__social-network__icon"></a>
+      </div>
       <nav class="navigation">
         <img src="../../icons/laptop.png" alt="laptop-icon" class="navigation__icon">
         <ul class="navigation__menu">
@@ -22,6 +27,6 @@
 </script>
 
 
-<style scoped lang="scss">
+<style scoped>
 
 </style>

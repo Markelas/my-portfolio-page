@@ -74,6 +74,18 @@ h1, h2, h3, h4 {
 	justify-content: space-between;
 	height: 150px;
 }
+.header__social-network{ //Иконки при узком экране
+  display: none;
+  .header__social-network__icon{
+    max-width: 32px;
+    max-height: 32px;
+    margin-top: 32px;
+  }
+  a:not(:first-child){
+    margin-left: 15px;
+  }
+
+}
 .navigation {
 	margin: 0 25px;
 	background-color: $background-color_2;
@@ -686,7 +698,107 @@ h1, h2, h3, h4 {
 }
 
 @media (max-width: 890px) {
+  .header_container{
+    justify-content: center;
+    height: 80px;
+    .social-network{
+    }
+  }
   .navigation{
     display: none;
+  }
+  .header__social-network{
+    display: block;
+  }
+  .promo {
+    &__social-network {
+      display: none;
+    }
+
+    &__container {
+      display: grid;
+      justify-content: center;
+      padding-bottom: 70px;
+    }
+
+    &__info {
+      margin: 0 auto;
+      order: 2;
+
+    }
+    &__name{
+      margin: 0;
+      text-align: center;
+    }
+    &__profession{
+      margin: 10px 0px;
+      text-align: center;
+    }
+    &__logo{
+      order: 1;
+      margin-bottom: 70px;
+      margin-left: 20px;
+      max-width: 340px;
+    }
+    &__links{
+      order: 3;
+      margin: 0 auto;
+      .connection-btn{
+        margin-top: 14px;
+        height: 44px;
+        width: 200px;
+        border-radius: 10px;
+      }
+    }
+  }
+  /*----------page parts--------*/
+  .page-parts{
+    font-size: 14px;
+    max-width: 110px;
+    max-height: 32px;
+    border-radius: 10px;
+    margin: 0 0 15px 0px;
+    &__text{
+      padding: 5px;
+    }
+  }
+
+  /*-------------AboutMe---------------*/
+  .about-me{
+    &__container{
+      display: block;
+      justify-content: normal;
+    }
+    &__photo{
+      margin: 12px auto;
+      max-width: 300px;
+    }
+    &__info{
+      margin: 0 auto;
+      max-width: 350px;
+      &__name{
+        font-size: 24px;
+      }
+    }
+    &__info__descr__text{
+      margin-top: 30px;
+      text-align: justify;
+    }
+  }
+  /*------------Technologies------------*/
+  .technologies{
+    margin-bottom: 70px;
+    &__title{
+      font-size: 30px;
+    }
+    &__block{
+      justify-content: center
+    }
+  }
+  /*-----------Career---------------*/
+  .career{
+    &__title{
+      font-size: 35px;
+    }
   }
 }

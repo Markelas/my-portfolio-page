@@ -65,6 +65,18 @@ h1, h2, h3, h4 {
   height: 150px;
 }
 
+.header__social-network {
+  display: none;
+}
+.header__social-network .header__social-network__icon {
+  max-width: 32px;
+  max-height: 32px;
+  margin-top: 32px;
+}
+.header__social-network a:not(:first-child) {
+  margin-left: 15px;
+}
+
 .navigation {
   margin: 0 25px;
   background-color: rgba(123, 74, 226, 0.1);
@@ -652,8 +664,96 @@ h1, h2, h3, h4 {
   }
 }
 @media (max-width: 890px) {
+  .header_container {
+    justify-content: center;
+    height: 80px;
+  }
   .navigation {
     display: none;
+  }
+  .header__social-network {
+    display: block;
+  }
+  .promo__social-network {
+    display: none;
+  }
+  .promo__container {
+    display: grid;
+    justify-content: center;
+    padding-bottom: 70px;
+  }
+  .promo__info {
+    margin: 0 auto;
+    order: 2;
+  }
+  .promo__name {
+    margin: 0;
+    text-align: center;
+  }
+  .promo__profession {
+    margin: 10px 0px;
+    text-align: center;
+  }
+  .promo__logo {
+    order: 1;
+    margin-bottom: 70px;
+    margin-left: 20px;
+    max-width: 340px;
+  }
+  .promo__links {
+    order: 3;
+    margin: 0 auto;
+  }
+  .promo__links .connection-btn {
+    margin-top: 14px;
+    height: 44px;
+    width: 200px;
+    border-radius: 10px;
+  }
+  /*----------page parts--------*/
+  .page-parts {
+    font-size: 14px;
+    max-width: 110px;
+    max-height: 32px;
+    border-radius: 10px;
+    margin: 0 0 15px 0px;
+  }
+  .page-parts__text {
+    padding: 5px;
+  }
+  /*-------------AboutMe---------------*/
+  .about-me__container {
+    display: block;
+    justify-content: normal;
+  }
+  .about-me__photo {
+    margin: 12px auto;
+    max-width: 300px;
+  }
+  .about-me__info {
+    margin: 0 auto;
+    max-width: 350px;
+  }
+  .about-me__info__name {
+    font-size: 24px;
+  }
+  .about-me__info__descr__text {
+    margin-top: 30px;
+    text-align: justify;
+  }
+  /*------------Technologies------------*/
+  .technologies {
+    margin-bottom: 70px;
+  }
+  .technologies__title {
+    font-size: 30px;
+  }
+  .technologies__block {
+    justify-content: center;
+  }
+  /*-----------Career---------------*/
+  .career__title {
+    font-size: 35px;
   }
 }
 

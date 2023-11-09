@@ -5,7 +5,7 @@
         <h4 class="portfolio page-parts__text">🔗 Portfolio</h4>
       </div>
       <h2 class="portfolio__title">My projects</h2>
-      <div class="portfolio__box" v-if="windowSizeCheck">
+      <div class="portfolio__box">
         <div class="portfolio__box__card" v-for="card in cardsInfo" :key="card.id">
           <a :href='card.cardLink'>
             <h4 class="card__title">{{card.title}}</h4>
@@ -18,7 +18,7 @@
           </a>
         </div>
       </div>
-      <swiper-app :cards-info="cardsInfo" v-else/>
+      <swiper-app :cards-info="cardsInfo" class="swiper"/>
     </div>
   </section>
 </template>
@@ -92,15 +92,26 @@ export default {
       ]
     }
   },
-  computed:{
-    windowSizeCheck() { //Показываем карусель при маленьких разрешениях
-      return window.innerWidth >= 1020;
-    }
-  }
+  // Решил поменять, на свойства с display, так как смена происходила не мгновенно
+  // computed:{
+  //   windowSizeCheck() { //Показываем карусель при маленьких разрешениях
+  //     return window.innerWidth >= 1020;
+  //   }
+  // }
 }
 </script>
 
 
-<style scoped lang="scss">
-
+<style scoped>
+.swiper{
+  display: none;
+}
+@media (max-width: 1020px) {
+  .swiper{
+    display: block;
+  }
+  .portfolio__box{
+    display: none;
+  }
+}
 </style>
