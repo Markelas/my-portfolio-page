@@ -106,7 +106,7 @@ export default {
 .swiper{
   display: none;
 }
-@media (max-width: 1020px) {
+@media (max-width: 1065px) {
   .swiper{
     display: block;
   }

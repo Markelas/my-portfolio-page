@@ -674,6 +674,10 @@ h1, h2, h3, h4 {
   .photo__my-photo{
     max-width: 80%;
   }
+  /*-----------Projects--------------*/
+  .portfolio__container{
+    margin: 0;
+  }
   /*------------Career---------------*/
   .career .career__box {
     margin: 0 auto;
@@ -785,9 +789,16 @@ h1, h2, h3, h4 {
       text-align: justify;
     }
   }
+  /*------------Portfolio---------------*/
+  .portfolio__title{
+    font-size: 36px;
+  }
   /*------------Technologies------------*/
   .technologies{
     margin-bottom: 70px;
+    .technologies__block__icon{
+      max-width: 35px;
+    }
     &__title{
       font-size: 30px;
     }
@@ -801,4 +812,57 @@ h1, h2, h3, h4 {
       font-size: 35px;
     }
   }
+  .career .career__box{
+    width: 80%;
+  }
+  .career .career__box__card{
+    padding: 20px;
+    .card__header__logo {
+      max-width: 90px;
+    }
+  }
+  .career .career__box__card .card__desr{
+    line-height: 130%;
+  }
+  /*--------Recommend-------------*/
+  .recommend{
+    margin-top: 60px;
+  }
+  .recommend__title{
+    font-size: 25px;
+  }
+  /*---------Contacts------------*/
+  .contacts{
+    margin-top: 30px;
+    &__title{
+      font-size: 35px;
+    }
+  }
+  /*-------WriteMe--------------*/
+  .contacts__title{
+    margin-bottom: 30px;
+  }
+  .contacts__box{
+    display: block;
+    .connection-btn{
+      margin: 50px auto;
+    }
+  }
 }
+@media (max-width: 410px) {
+  .promo__logo{
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 40px;
+  }
+  .about-me__info__descr__text__small{
+    margin: 0 auto;
+    width: 90%;
+  }
+  .about-me__info{
+    margin: 0 20px;
+  }
+  /*---------Technologies----------*/
+
+}
+

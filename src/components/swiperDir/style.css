@@ -71,3 +71,37 @@
         transition: 0.5s;
     }
 }
+@media (max-width: 550px) {
+    .projects{
+        .carousel-cell{
+            width: 250px;
+            border-radius: 16px;
+            border: 1px solid rgba(123, 74, 226, 0.5);
+            padding: 20px;
+            transition: 0.5s;
+        }
+        .carousel-cell__tools__item{
+            display: none;
+        }
+        .carousel-cell__title{
+            font-size: 16px;
+        }
+        .carousel-cell__img {
+            width: 100%;
+            height: 45%;
+        }
+        .carousel-cell__desr{
+            width: 208px;
+            height: 100px;
+            margin-bottom: 30px;
+        }
+    }
+}
+.career_swiper{
+    .career__box{
+        width: 80%;
+    }
+    .career__box__card{
+        margin-right: 20px;
+    }
+}
