@@ -37,6 +37,24 @@ export default {
       cardsInfo:[
         {
           id: 1,
+          title : 'Shopot',
+          cardLink: 'https://nuxt-mark-music-app.web.app/',
+          descr: 'An application where you can click on a desired phrase and this moment will be revealed in the video.',
+          toolsMain: 'Vue js',
+          toolsSecond: ['Javascript', 'SCSS'],
+          img: require('/images/card_img/shopot.png')
+        },
+        {
+          id: 2,
+          title : 'Music app',
+          cardLink: 'https://nuxt-mark-music-app.vercel.app/',
+          descr: 'Application for listening to music.',
+          toolsMain: 'Nuxt',
+          toolsSecond: ['HTML', 'CSS'],
+          img: require('/images/card_img/music_app.png')
+        },
+        {
+          id: 3,
           title : 'Vue js CRM system',
           cardLink: 'https://vue-crm-frontend-mark.web.app/',
           descr: 'This is a CRM system (home accounting) for analyzing and accounting for expenses.',
@@ -45,7 +63,7 @@ export default {
           img: require('/images/card_img/card_vue_crm.png')
         },
         {
-          id: 2,
+          id: 4,
           title : 'Vue js Freelance',
           cardLink: 'https://vue-freelance-web-app-mark.web.app/',
           descr: 'his is an application for finding freelance jobs. Here you can publish your new task or take it on the board with suggestions.',
@@ -54,7 +72,7 @@ export default {
           img: require('/images/card_img/card_vue_freelance.png')
         },
         {
-          id: 3,
+          id: 5,
           title : 'Vue js resume constructor',
           cardLink: 'https://vue-homework-8-mark.web.app/',
           descr: 'This is a resume constructor. Here you can put together your own resume.',
@@ -63,7 +81,7 @@ export default {
           img: require('/images/card_img/card_vue_resume.png')
         },
         {
-          id: 4,
+          id: 6,
           title : 'Vue js Todos',
           cardLink: 'https://vue-ts-todos.web.app/',
           descr: 'This is a list of tasks where you can see current tasks and completed ones. You can also create a new task.',
@@ -72,7 +90,7 @@ export default {
           img: require('/images/card_img/card_vue_todos.png')
         },
         {
-          id: 5,
+          id: 7,
           title : 'Plants',
           cardLink: 'https://rolling-scopes-school.github.io/markelas-JSFEPRESCHOOL2022Q4/plants/pages/main/',
           descr: 'Website for a plant care company. The company is engaged in the cultivation, care and sale of plants. ',
@@ -81,7 +99,7 @@ export default {
           img: require('/images/card_img/card_plants.png')
         },
         {
-          id: 6,
+          id: 8,
           title : 'Cozy House',
           cardLink: 'https://rolling-scopes-school.github.io/markelas-JSFE2022Q1/shelter/pages/main/index.html',
           descr: 'Website for shelter. They offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world.',
